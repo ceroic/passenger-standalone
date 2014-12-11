@@ -7,7 +7,7 @@ RUN echo "deb https://oss-binaries.phusionpassenger.com/apt/passenger wheezy mai
 RUN chown root: /etc/apt/sources.list.d/passenger.list
 RUN chmod 600 /etc/apt/sources.list.d/passenger.list
 RUN apt-get update
-RUN apt-get install -y passenger
+RUN apt-get install -y passenger procps
 
 # Clean up APT when done.
 RUN apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
