@@ -2,7 +2,7 @@ FROM python:3.4-wheezy
 MAINTAINER Ceroic <ops@ceroic.com>
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 561F9B9CAC40B2F7
-RUN apt-get update && apt-get install -y apt-transport-https ca-certificates
+RUN apt-get update && apt-get install -y apt-transport-https ca-certificates procps
 RUN echo "deb https://oss-binaries.phusionpassenger.com/apt/passenger wheezy main" >> /etc/apt/sources.list.d/passenger.list
 RUN chown root: /etc/apt/sources.list.d/passenger.list
 RUN chmod 600 /etc/apt/sources.list.d/passenger.list

@@ -1,4 +1,4 @@
-FROM gmeans/docker-node:0.12.0-wheezy
+FROM node:0.12-wheezy
 MAINTAINER Ceroic <ops@ceroic.com>
 
 RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 561F9B9CAC40B2F7
